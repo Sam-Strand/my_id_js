@@ -5,10 +5,10 @@ export default defineConfig({
         outDir: 'dist',
         lib: {
             entry: 'src/index.js',
-            name: 'my_id',
+            name: 'my-id',
             fileName: (format) => {
-                if (format === 'es') return 'my_id.esm.js'
-                return `my_id.${format}.js`;
+                if (format === 'es') return 'my-id.esm.js'
+                return `my-id.${format}.js`;
             },
             formats: ['es']
         },
